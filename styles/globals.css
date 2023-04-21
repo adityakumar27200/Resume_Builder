@@ -25,3 +25,38 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.container {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resumeContainer {
+  width: 70%;
+  height: 70%;
+  background-color: brown;
+  text-align: right;
+}
+
+.topCard {
+  background-color: #b7afd2;
+  color: white;
+  padding: 15px;
+  margin-right: 0px;
+}
+
+.name {
+  font-size: 64px;
+  font-weight: bolder;
+}
+.role {
+  font-size: 34px;
+}
+.brief {
+  text-align: right;
+
+  width: 150px;
+}
