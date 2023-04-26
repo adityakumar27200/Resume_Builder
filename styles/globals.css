@@ -18,25 +18,25 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 .container {
   background-color: whitesmoke;
-  height: 100vh;
-  width: 100vw;
+  /* text-align: center; */
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 }
+
 .resumeContainer {
-  width: 70%;
-  height: 70%;
+  width: 75%;
+  height: 75%;
   background-color: brown;
   text-align: right;
 }
@@ -52,11 +52,98 @@ body {
   font-size: 64px;
   font-weight: bolder;
 }
+
 .role {
   font-size: 34px;
 }
-.brief {
-  text-align: right;
 
-  width: 150px;
+.brief {
+  text-align: left;
+  max-width: 98%;
+  margin-left: 30%;
+
+}
+
+.bottomCard {
+  display: flex;
+  text-align: left;
+}
+
+.leftCard {
+  background-color: aquamarine;
+  padding: 10px;
+  border-right-color: #0d0b11;
+  border-right-width: 2px;
+  width: 100%;
+  max-width: 40%;
+  min-width: 20%;
+}
+
+.leftCard h1 {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.rightCard {
+  background-color: rgb(252, 234, 212);
+  padding: 10px;
+  padding-left: 5%;
+  border-right-width: 2px;
+  max-width: 80%;
+  min-width: 80%;
+
+}
+.rightCard h1 {
+  font-weight: bold;
+  font-size: 150%;
+}
+.singleContact {
+  display: flex;
+  padding: 15px;
+}
+
+.singleContact img {
+  margin-right: 15px;
+}
+
+.skills {
+  border-top: dashed #0d0b11;
+}
+
+.singleSkills {
+  display: flex;
+  padding: 15px;
+}
+
+.singleSkills h2 {
+  margin-right: 5%;
+  font-weight: bold;
+}
+.commonComponents{
+  display: flex;  
+}
+/* .commonComponents div {
+  display: flex;
+  margin-left: 2%;
+  padding: 2%;
+} */
+.commonComponents h2{
+  font-weight:500;
+}
+.commonComponents1{
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-left: 2%;
+  padding: 2%;
+}
+.commonComponents1 p{
+  font-weight: bold;
+  justify-content: left;
+  
+}
+.commonComponents1 a{
+  display: flex;
+  font-weight: bold;
+ 
 }
