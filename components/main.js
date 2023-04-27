@@ -1,6 +1,6 @@
 export default function Main() {
   return (
-    <div className="bottomCard">
+    <div className="bottomCard bg-white" >
       <div className="leftCard">
         <div className="contacts">
           <h1>Contacts</h1>
@@ -9,7 +9,6 @@ export default function Main() {
             <p>Favicon.Icon</p>
           </div>
         </div>
-
         <div className="skills">
           <h1>Skills</h1>
           <div className="singleSkills">
@@ -20,24 +19,17 @@ export default function Main() {
       </div>
       <div className="rightCard">
         <h1>Education</h1>
-        <div className="rightGrid" width="100%">
-          <div className="commonComponents">
-            <div className="commonComponents0">
-              <h2>18 june 2022 - 13 june 2023 </h2>
-            </div>
-            <div className="commonComponents1">
-              <div>
-                <p>main deatails</p>
-                <ul>
-                  <li>Co dd gthfe efurf hyr fui igrffb gugb c ffee</li>
-                  <li>Tea</li>
-                  <li>Milk</li>
-                </ul>
-              </div>
-              <a href="http://localhost:3000">link text</a>
-            </div>
+        {/* <div className="rightGrid" >
+          <h2 className="dateRange">18 june 2022 - 13 june 2023 </h2>
+          <div className="commonComponents1">
+            <p>main deatails</p>
+            <a href="http://localhost:3000">link text</a>
           </div>
-        </div>
+        </div> */}
+        <div class="d-flex bd-highlight">
+  <div class="p-2 w-100 bd-highlight">Flex item</div>
+  <div class="p-2 flex-shrink-1 bd-highlight">Flex item</div>
+</div>
       </div>
     </div>
   );

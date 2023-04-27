@@ -70,7 +70,8 @@ body {
 }
 
 .bottomCard {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   text-align: left;
 }
 
@@ -94,8 +95,8 @@ body {
   padding: 10px;
   padding-left: 5%;
   border-right-width: 2px;
-  max-width: 80%;
-  min-width: 80%;
+  max-width: 100%;
+  min-width: 100%;
 }
 .rightCard h1 {
   font-weight: bold;
@@ -123,34 +124,34 @@ body {
   margin-right: 5%;
   font-weight: bold;
 }
-.commonComponents {
+/* .commonComponents {
   display: grid;
   grid-template-columns: repeat(2, 1fr, 2fr);
   grid-gap: 20px;
-}
+} */
 /* .commonComponents div {
   display: flex;
   margin-left: 2%;
   padding: 2%;
 } */
-.commonComponents h2 {
+/* .commonComponents h2 {
   font-weight: 500;
-}
-.commonComponents1 {
-  /* width: 100%; */
+} */
+/* .commonComponents1 {
+  /* width: 100%;
   display: flex;
   justify-content: space-between;
   margin-left: 2%;
   padding: 2%;
-}
-.commonComponents1 p {
+}  */
+/* .commonComponents1 p {
   font-weight: bold;
   justify-content: left;
 
   text-align: right;
-  /* width: 150px; */
+  width: 150px;
   margin-left: 50%;
-}
+} */
 
 .backCard {
   background-color: yellowgreen;
@@ -161,11 +162,26 @@ body {
   border-radius: 14px;
   border: 3px solid black;
 }
-.commonComponents1 a {
-  display: flex;
-  font-weight: bold;
-}
 
 .rightGrid {
   background-color: rgb(236, 150, 150);
 }
+
+
+.rightGrid{
+  display: grid;
+  
+}
+/* .dateRange{
+  max-width: 17%;
+  margin: 10px;
+  font-weight: 600;
+  
+}
+.commonComponents1{
+  display: flex;
+  font-weight: 600;
+  width: 100%;
+  justify-content: space-between;
+  margin:10px;
+} */
